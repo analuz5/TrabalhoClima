@@ -12,6 +12,7 @@ const elementoUmidade = document.querySelector("#umidade span");
 const elementoVento = document.querySelector("#vento span");
 const elementoDadosClima = document.querySelector("#dadosClima");
 const elementoMensagemErro = document.querySelector("#mensagemErro");
+const imgInicial = document.querySelector("#imgInicial");
 
 // Funções
 
@@ -23,6 +24,9 @@ const mostreDadosClima = async (cidade) => {
     try {
         // Oculta a mensagem de erro
         elementoMensagemErro.classList.add("hide");
+
+        // Oculta a imagem inicial
+        imgInicial.classList.add("hide");
 
         // Obtém os dados climáticos da API
         const data = await getWeatherData(cidade);
