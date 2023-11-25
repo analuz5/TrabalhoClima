@@ -1,0 +1,157 @@
+/* Importa a fonte 'Montserrat' do Google Fonts com pesos específicos */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,600&display=swap');
+
+/* Estilos globais para redefinir margens, preenchimento e caixa de modelo, usando a fonte 'Montserrat' */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#icone {
+    width: 70px;
+    margin-bottom: 0.5rem;
+    /* Adicionado para espaçamento inferior */
+}
+
+/* Estilo corpo do site */
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: #4e5aa1;
+    overflow: hidden;
+}
+
+/* Estilo do logotipo com largura, altura, borda arredondada e margens definidas */
+#logo {
+    width: 25%;
+    height: 25%;
+    border-radius: 70%;
+    margin-left: 15%;
+    margin-top: 150px;
+}
+
+/* Classe de ocultar elementos */
+.hide {
+    display: none;
+}
+
+/* Estilo do contêiner principal com fundo, sombra, filtro de desfoque, borda e borda arredondada */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 20px;
+    color: #fff;
+    max-width: 400px;
+    margin-top: 20px;
+    /* Adicionado para espaçamento superior */
+}
+
+/* Estilo do cabeçalho h3 dentro do contêiner, com margem, centralização e largura máxima */
+#container h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+    max-width: 10px;
+    /* Adicionado para limitar a largura do texto */
+    margin: 0 auto;
+    /* Adicionado para centralizar */
+}
+
+/* Estilo do formulário de entrada com exibição flexível e transformação do texto para maiúsculas */
+#formularioEntrada {
+    display: flex;
+    text-transform: uppercase;
+}
+
+/* Estilo do campo de input no formulário com preenchimento, borda, flexibilidade e transformação do texto para maiúsculas */
+#formulario input {
+    padding: 0.8rem;
+    border: none;
+    flex: 1;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+/* Estilo do botão no formulário com preenchimento, largura mínima, margem à esquerda, cor do texto e borda arredondada */
+#formulario button {
+    padding: 0.8rem;
+    min-width: 50px;
+    margin-left: 8px;
+    color: #fff;
+    /* Personalize a cor conforme necessário */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Estilo do bloco de dados climáticos com borda superior, margem superior, preenchimento superior e centralização do texto */
+#dadosClima {
+    border-top: 1px solid #fff;
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+/* Estilo do título h2 dentro do bloco de dados climáticos com exibição flexível, justificação e alinhamento central */
+#dadosClima h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.6rem;
+}
+
+/* Estilo do ícone dentro do bloco de dados climáticos com tamanho da fonte */
+#img {
+    font-size: 10rem;
+}
+
+/* Estilo para espaçamento do texto dentro do bloco de dados climáticos */
+#dadosClima span {
+    margin: 0.6rem;
+}
+
+/* Estilo do bloco de descrição do formulário com exibição flexível, justificação e alinhamento central */
+#descricaoFormulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.6rem 0;
+}
+
+/* Estilo da descrição com peso da fonte em negrito, transformação do texto e espaçamento superior */
+#descricao {
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 0.5rem;
+    /* Adicionado para espaçamento superior */
+}
+
+/* Estilo do bloco de detalhes com exibição flexível, justificação e alinhamento central, e margem superior */
+#detalhes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    /* Adicionado para espaçamento superior */
+}
+
+/* Estilo do bloco de umidade com borda direita, margem e preenchimento */
+#detalhes #umidade {
+    border-right: 1px solid #fff;
+    margin: 0.5rem;
+    /* Reduzido para alinhar ao centro */
+    padding: 1rem;
+    /* Reduzido para alinhar ao centro */
+}
+
+/* Estilo do bloco de vento com margem e preenchimento */
+#detalhes #vento {
+    margin: 0.5rem;
+    /* Reduzido para alinhar ao centro */
+    padding: 0.6rem;
+}

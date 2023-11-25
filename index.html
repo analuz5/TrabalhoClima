@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações da página -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importação do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
+    <!-- Importação do arquivo de estilos personalizados -->
+    <link rel="stylesheet" href="css/estilo.css" />
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="imagens/logo.png">
+</head>
+
+<!-- Título da página -->
+<title>Clima</title>
+
+<body>
+    <!-- Logo da página -->
+    <img src="imagens/logo.png" id="logo">
+
+    <!-- Container principal da página -->
+    <div class="container">
+        <!-- Formulário para pesquisar o clima -->
+        <div class="formulario">
+            <!-- Título do formulário -->
+            <h3>Descubra o clima com os AnJos do Tempo</h3>
+
+            <!-- Formulário de entrada -->
+            <div class="formularioEntrada"> 
+                <!-- Campo de entrada para o nome da cidade -->
+                <input type="text" id="entradaCidade" placeholder="Digite o nome da cidade" /> 
+
+                <!-- Botão de pesquisa -->
+                <button id="pesquisa"> 
+                    <img src="imagens/vetores/pesquisa.svg">
+                </button>
+            </div>
+        </div>
+
+        <!-- Bloco de exibição dos dados climáticos -->
+        <div id="dadosClima" class="hide">
+            <!-- Título com o ícone de mapa e o nome da cidade -->
+            <h2>
+                <img src="imagens/vetores/mapa.svg">
+                <span id="cidade"></span>
+            </h2>
+
+            <!-- Exibição da temperatura -->
+            <p id="temperatura"><span>0</span>°C</p>
+
+            <!-- Descrição do clima e ícone correspondente -->
+            <div id="descricaoFormulario">
+                <p id="descrcao">Nublado</p>
+                <img src="imagens/tempo/limpo.png" alt="Condições do Tempo" id="icone" />
+            </div>
+
+            <!-- Detalhes como umidade e vento -->
+            <div id="detalhes">
+                <p id="umidade">
+                    <img src="imagens/vetores/agua.svg">
+                    <span>0%</span>
+                </p>
+                <p id="vento">
+                    <img src="imagens/vetores/vento.svg">
+                    <span>0 Km/h</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Mensagem de erro -->
+        <div id="mensagemErro" class="hide">
+            <div class="box">
+                <img src="imagens/erro.png">
+                <p>Localização não encontrada, tente novamente</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carregando o script JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
