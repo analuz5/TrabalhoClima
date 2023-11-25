@@ -52,8 +52,9 @@ body {
    
 }
 
-#imgInicial{
-    height: 185px;
+#imgInicial {
+    height: 20%;
+    width: 100%; 
     margin-top: 80px;
 }
 /* Estilo do cabeçalho h3 dentro do contêiner, com margem, centralização e largura máxima */
